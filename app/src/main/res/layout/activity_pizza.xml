@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".Pizza">
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="178dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pizzastick" />
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="153dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/kurale"
+        android:text="Pizza"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="210dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="@string/food_panda"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="54dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pandabear" />
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="32dp"
+        android:layout_height="34dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chefhat" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="103dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/kurale"
+        android:text="Recipes"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView20" />
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="130dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wateir" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/backhome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="415dp"
+        android:layout_height="572dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_gradient"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="@color/white">
+
+                    <ImageView
+                        android:layout_width="1in"
+                        android:layout_height="1in"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/top_back"
+                        android:elevation="3dp"
+                        android:src="@drawable/pizza_4" />
+
+
+                    <TextView
+                        android:id="@+id/salmipi"
+                        android:layout_width="337dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="#FFFFFF"
+                        android:fontFamily="@font/kurale"
+                        android:paddingLeft="1.1in"
+                        android:text="Salami"
+                        android:textColor="#C51162"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="219dp"
+                        android:layout_height="62dp"
+                        android:layout_gravity="bottom"
+                        android:background="#FFFFFF"
+                        android:fontFamily="@font/kurale"
+                        android:paddingLeft="1.1in"
+                        android:text="80 cal"
+                        android:textColor="@color/black"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="230dp"
+                        android:layout_marginRight="70dp"
+                        android:layout_marginBottom="5dp"
+                        android:elevation="3dp"
+                        android:src="@drawable/flame" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_gradient"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="1in"
+                        android:layout_height="1in"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/top_back"
+                        android:elevation="3dp"
+                        android:src="@drawable/cheese_pizza1" />
+
+
+                    <TextView
+                        android:layout_width="330dp"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:background="#FFFFFF"
+                        android:fontFamily="@font/kurale"
+                        android:paddingLeft="1.1in"
+                        android:text="Veg Pizza "
+                        android:textColor="#C51162"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="219dp"
+                        android:layout_height="64dp"
+                        android:layout_gravity="bottom"
+                        android:background="#FFFFFF"
+                        android:fontFamily="@font/kurale"
+                        android:paddingLeft="1.1in"
+                        android:text="60 cal"
+                        android:textColor="@color/black"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="230dp"
+                        android:layout_marginRight="70dp"
+                        android:layout_marginBottom="5dp"
+                        android:elevation="3dp"
+                        android:src="@drawable/flame" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_gradient"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+
+                    <ImageView
+                        android:layout_width="1in"
+                        android:layout_height="1in"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/top_back"
+                        android:elevation="3dp"
+                        android:src="@drawable/pizza_5" />
+
+                    <TextView
+                        android:layout_width="368dp"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:background="#FFFFFF"
+                        android:fontFamily="@font/kurale"
+                        android:paddingLeft="1.1in"
+                        android:text="Cheese Pizza"
+                        android:textColor="#C51162"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="222dp"
+                        android:layout_height="62dp"
+                        android:layout_gravity="bottom"
+                        android:background="#FFFFFF"
+                        android:fontFamily="@font/kurale"
+                        android:paddingLeft="1.1in"
+                        android:text="80 cal"
+                        android:textColor="@color/black"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="230dp"
+                        android:layout_marginRight="70dp"
+                        android:layout_marginBottom="5dp"
+                        android:elevation="3dp"
+                        android:src="@drawable/flame" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_gradient"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="1in"
+                        android:layout_height="1in"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/top_back"
+                        android:elevation="3dp"
+                        android:src="@drawable/hot_cheesy_pizza" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:background="#FFFFFF"
+                        android:fontFamily="@font/kurale"
+                        android:paddingLeft="1.1in"
+                        android:text="BBQ Chicken"
+                        android:textColor="#C51162"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="226dp"
+                        android:layout_height="67dp"
+                        android:layout_gravity="bottom"
+                        android:background="#FFFFFF"
+                        android:fontFamily="@font/kurale"
+                        android:paddingLeft="1.1in"
+                        android:text="90 cal"
+                        android:textColor="@color/black"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="230dp"
+                        android:layout_marginRight="70dp"
+                        android:layout_marginBottom="5dp"
+                        android:elevation="3dp"
+                        android:src="@drawable/flame" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_gradient"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="1in"
+                        android:layout_height="1in"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/top_back"
+                        android:elevation="3dp"
+                        android:src="@drawable/vegatable_pizza1" />
+
+
+                    <TextView
+                        android:layout_width="356dp"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:background="#FFFFFF"
+                        android:fontFamily="@font/kurale"
+                        android:paddingLeft="1.1in"
+                        android:text="Hot-cheesy"
+                        android:textColor="#C51162"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="223dp"
+                        android:layout_height="66dp"
+                        android:layout_gravity="bottom"
+                        android:background="#FFFFFF"
+                        android:fontFamily="@font/kurale"
+                        android:paddingLeft="1.1in"
+                        android:text="85 cal"
+                        android:textColor="@color/black"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="230dp"
+                        android:layout_marginRight="70dp"
+                        android:layout_marginBottom="5dp"
+                        android:elevation="3dp"
+                        android:src="@drawable/flame" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_gradient"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="1in"
+                        android:layout_height="1in"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/top_back"
+                        android:elevation="3dp"
+                        android:src="@drawable/pizza_5" />
+
+
+                    <TextView
+                        android:layout_width="346dp"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:background="#FFFFFF"
+                        android:fontFamily="@font/kurale"
+                        android:paddingLeft="1.1in"
+                        android:text="Veg-Cheesy"
+                        android:textColor="#C51162"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="223dp"
+                        android:layout_height="61dp"
+                        android:layout_gravity="bottom"
+                        android:background="#FFFFFF"
+                        android:fontFamily="@font/kurale"
+                        android:paddingLeft="1.1in"
+                        android:text="80 cal"
+                        android:textColor="@color/black"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="230dp"
+                        android:layout_marginRight="70dp"
+                        android:layout_marginBottom="5dp"
+                        android:elevation="3dp"
+                        android:src="@drawable/flame" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_gradient"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="1in"
+                        android:layout_height="1in"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/top_back"
+                        android:elevation="3dp"
+                        android:src="@drawable/pizza_2" />
+
+
+                    <TextView
+                        android:layout_width="344dp"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:background="#FFFFFF"
+                        android:fontFamily="@font/kurale"
+                        android:paddingLeft="1.1in"
+                        android:text="Margherita   "
+                        android:textColor="#C51162"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="223dp"
+                        android:layout_height="66dp"
+                        android:layout_gravity="bottom"
+                        android:background="#FFFFFF"
+                        android:fontFamily="@font/kurale"
+                        android:paddingLeft="1.1in"
+                        android:text="75 cal"
+                        android:textColor="@color/black"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="230dp"
+                        android:layout_marginRight="70dp"
+                        android:layout_marginBottom="5dp"
+                        android:elevation="3dp"
+                        android:src="@drawable/flame" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_gradient"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="1in"
+                        android:layout_height="1in"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/top_back"
+                        android:elevation="3dp"
+                        android:src="@drawable/pizza_3" />
+
+
+                    <TextView
+                        android:layout_width="330dp"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:background="#FFFFFF"
+                        android:fontFamily="@font/kurale"
+                        android:paddingLeft="1.1in"
+                        android:text="Pepperoni "
+                        android:textColor="#C51162"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="229dp"
+                        android:layout_height="61dp"
+                        android:layout_gravity="bottom"
+                        android:background="#FFFFFF"
+                        android:fontFamily="@font/kurale"
+                        android:paddingLeft="1.1in"
+                        android:text="80 cal"
+                        android:textColor="@color/black"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="230dp"
+                        android:layout_marginRight="70dp"
+                        android:layout_marginBottom="5dp"
+                        android:elevation="3dp"
+                        android:src="@drawable/flame" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_gradient"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="1in"
+                        android:layout_height="1in"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/top_back"
+                        android:elevation="3dp"
+                        android:src="@drawable/pizza_4" />
+
+
+                    <TextView
+                        android:layout_width="330dp"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:background="#FFFFFF"
+                        android:fontFamily="@font/kurale"
+                        android:paddingLeft="1.1in"
+                        android:text="Supreme "
+                        android:textColor="#C51162"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="223dp"
+                        android:layout_height="69dp"
+                        android:layout_gravity="bottom"
+                        android:background="#FFFFFF"
+                        android:fontFamily="@font/kurale"
+                        android:paddingLeft="1.1in"
+                        android:text="80 cal"
+                        android:textColor="@color/black"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="230dp"
+                        android:layout_marginRight="70dp"
+                        android:layout_marginBottom="5dp"
+                        android:elevation="3dp"
+                        android:src="@drawable/flame" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

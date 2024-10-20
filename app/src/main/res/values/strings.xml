@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">it22609380</string>
+    <string name="food_panda" translatable="false">Food Panda</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="signup" translatable="false">Sign UP</string>
+    <string name="Recipe" translatable="false">Recipe</string>
+</resources>
+
+
+
+
+
